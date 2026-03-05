@@ -139,6 +139,20 @@ export default function JobDetail() {
         const appNumber = await saveApplication();
 
         if (appNumber) {
+            // Send confirmation email
+            try {
+                await fetch("/api/send-confirmation", {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify({
+                        email: formData.email,
+                        applicationNumber: appNumber
+                    })
+                });
+            } catch (err) {
+                console.error("Failed to send confirmation email:", err);
+            }
+
             Swal.fire({
                 title: "Application Submitted Successfully",
                 html: `

@@ -1,21 +1,28 @@
-const nodemailer = require('nodemailer');
+import express from 'express';
+import cors from 'cors';
+import bodyParser from 'body-parser';
+import nodemailer from 'nodemailer';
+import dotenv from 'dotenv';
 
-export default async function handler(req, res) {
-  if (req.method !== 'POST') {
-    return res.status(405).json({ error: 'Method not allowed' });
-  }
+dotenv.config();
 
+const app = express();
+const port = 5000;
+
+app.use(cors());
+app.use(bodyParser.json());
+
+app.post('/api/send-confirmation', async (req, res) => {
   const { email, applicationNumber } = req.body;
 
   if (!email || !applicationNumber) {
     return res.status(400).json({ error: 'Missing email or application number' });
   }
 
-  // Use the credentials provided by the user
   const transporter = nodemailer.createTransport({
     host: 'smtp.gmail.com',
     port: 465,
-    secure: true, // Use SSL
+    secure: true,
     auth: {
       user: process.env.EMAIL_USER,
       pass: process.env.EMAIL_PASS,
@@ -50,9 +57,13 @@ export default async function handler(req, res) {
 
   try {
     await transporter.sendMail(mailOptions);
-    return res.status(200).json({ message: 'Email sent successfully' });
+    res.status(200).json({ message: 'Email sent successfully' });
   } catch (error) {
     console.error('Error sending email:', error);
-    return res.status(500).json({ error: 'Failed to send email', details: error.message });
+    res.status(500).json({ error: 'Failed to send email', details: error.message });
   }
-}
+});
+
+app.listen(port, '0.0.0.0', () => {
+  console.log(`Node server running on http://127.0.0.1:${port}`);
+});
