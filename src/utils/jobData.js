@@ -72,10 +72,10 @@ const JOB_TEMPLATES = {
         contract: '24 Months (Renewable)',
         companies: ['Global Freight Lines', 'Continental Trucking', 'Trans-Euro Logistics', 'North American Roadways'],
         images: [
-            'https://images.pexels.com/photos/2800121/pexels-photo-2800121.jpeg',
-            'https://images.pexels.com/photos/2199293/pexels-photo-2199293.jpeg',
-            'https://images.pexels.com/photos/93398/pexels-photo-93398.jpeg',
-            'https://images.pexels.com/photos/1556701/pexels-photo-1556701.jpeg'
+            '/assets/images/pexels-photo-2800121.jpeg',
+            '/assets/images/pexels-photo-2199293.jpeg',
+            '/assets/images/pexels-photo-93398.jpeg',
+            '/assets/images/pexels-photo-1556701.jpeg'
         ]
     },
     'Security': {
@@ -85,10 +85,10 @@ const JOB_TEMPLATES = {
         contract: '24 Months',
         companies: ['SecureGuard International', 'Global Security Solutions', 'Sentinel Safety Group', 'Shield Protection'],
         images: [
-            'https://images.pexels.com/photos/7714856/pexels-photo-7714856.jpeg',
-            'https://images.pexels.com/photos/5912443/pexels-photo-5912443.jpeg',
-            'https://images.pexels.com/photos/6141386/pexels-photo-6141386.jpeg',
-            'https://images.pexels.com/photos/6612281/pexels-photo-6612281.jpeg'
+            '/assets/images/pexels-photo-7714856.jpeg',
+            '/assets/images/pexels-photo-5912443.jpeg',
+            '/assets/images/pexels-photo-6141386.jpeg',
+            '/assets/images/pexels-photo-6612281.jpeg'
         ]
     },
     'Plumbing': {
@@ -98,10 +98,10 @@ const JOB_TEMPLATES = {
         contract: '24 Months',
         companies: ['BuildCare Engineering', 'Urban Water Solutions', 'Prime Infrastructure Partners', 'Global Facility Tech'],
         images: [
-            'https://images.pexels.com/photos/2311022/pexels-photo-2311022.jpeg',
-            'https://images.pexels.com/photos/1454806/pexels-photo-1454806.jpeg',
-            'https://images.pexels.com/photos/3466163/pexels-photo-3466163.jpeg',
-            'https://images.pexels.com/photos/1250644/pexels-photo-1250644.jpeg'
+            '/assets/images/pexels-photo-2311022.jpeg',
+            '/assets/images/pexels-photo-1454806.jpeg',
+            '/assets/images/pexels-photo-3466163.jpeg',
+            '/assets/images/pexels-photo-1250644.jpeg'
         ]
     },
     'Gardening': {
@@ -111,10 +111,10 @@ const JOB_TEMPLATES = {
         contract: '12-24 Months',
         companies: ['Eden Landscaping', 'Green Horizon Services', 'Global Estate Care', 'Terra Gardening Group'],
         images: [
-            'https://images.pexels.com/photos/1301897/pexels-photo-1301897.jpeg',
-            'https://images.pexels.com/photos/305566/pexels-photo-305566.jpeg',
-            'https://images.pexels.com/photos/2255441/pexels-photo-2255441.jpeg',
-            'https://images.pexels.com/photos/2132180/pexels-photo-2132180.jpeg'
+            '/assets/images/pexels-photo-1301897.jpeg',
+            '/assets/images/pexels-photo-305566.jpeg',
+            '/assets/images/pexels-photo-2255441.jpeg',
+            '/assets/images/pexels-photo-2132180.jpeg'
         ]
     },
     'Agriculture': {
@@ -124,10 +124,10 @@ const JOB_TEMPLATES = {
         contract: '9-24 Months',
         companies: ['Global Farm Co', 'Harvest Green International', 'TerraFirma Agriculture', 'AgriGrowth Solutions'],
         images: [
-            'https://images.pexels.com/photos/3927018/pexels-photo-3927018.jpeg',
-            'https://images.pexels.com/photos/1486976/pexels-photo-1486976.jpeg',
-            'https://images.pexels.com/photos/440731/pexels-photo-440731.jpeg',
-            'https://images.pexels.com/photos/2132180/pexels-photo-2132180.jpeg'
+            '/assets/images/pexels-photo-3927018.jpeg',
+            '/assets/images/pexels-photo-1486976.jpeg',
+            '/assets/images/pexels-photo-440731.jpeg',
+            '/assets/images/pexels-photo-2132180.jpeg'
         ]
     },
     'Construction': {
@@ -137,10 +137,10 @@ const JOB_TEMPLATES = {
         contract: '24 Months (Renewable)',
         companies: ['Vinci Base Construction', 'Hochtief Projects', 'Bechtel Support', 'Skanska Field Services'],
         images: [
-            'https://images.pexels.com/photos/1230157/pexels-photo-1230157.jpeg',
-            'https://images.pexels.com/photos/1216589/pexels-photo-1216589.jpeg',
-            'https://images.pexels.com/photos/159306/pexels-photo-159306.jpeg',
-            'https://images.pexels.com/photos/159306/pexels-photo-159306.jpeg'
+            '/assets/images/pexels-photo-1230157.jpeg',
+            '/assets/images/pexels-photo-1216589.jpeg',
+            '/assets/images/pexels-photo-159306.jpeg',
+            '/assets/images/pexels-photo-159306.jpeg'
         ]
     },
     'Housekeeping': {
@@ -150,10 +150,10 @@ const JOB_TEMPLATES = {
         contract: '24 Months',
         companies: ['Marriott Operations', 'Hilton Services', 'Hyatt Housekeeping', 'Accor Support'],
         images: [
-            'https://images.pexels.com/photos/1105081/pexels-photo-1105081.jpeg',
-            'https://images.pexels.com/photos/338504/pexels-photo-338504.jpeg',
-            'https://images.pexels.com/photos/4031013/pexels-photo-4031013.jpeg',
-            'https://images.pexels.com/photos/53464/hotel-room-room-hotel-luxury-53464.jpeg'
+            '/assets/images/pexels-photo-1105081.jpeg',
+            '/assets/images/pexels-photo-338504.jpeg',
+            '/assets/images/pexels-photo-4031013.jpeg',
+            '/assets/images/hotel-room-room-hotel-luxury-53464.jpeg'
         ]
     },
     'Elderly Care': {
@@ -163,10 +163,10 @@ const JOB_TEMPLATES = {
         contract: '24-36 Months',
         companies: ['Sunrise Senior Living', 'Bupa Core Care', 'Home Instead', 'Sunrise Communities'],
         images: [
-            'https://images.pexels.com/photos/339620/pexels-photo-339620.jpeg',
-            'https://images.pexels.com/photos/3768131/pexels-photo-3768131.jpeg',
-            'https://images.pexels.com/photos/7579831/pexels-photo-7579831.jpeg',
-            'https://images.pexels.com/photos/2058130/pexels-photo-2058130.jpeg'
+            '/assets/images/pexels-photo-339620.jpeg',
+            '/assets/images/pexels-photo-3768131.jpeg',
+            '/assets/images/pexels-photo-7579831.jpeg',
+            '/assets/images/pexels-photo-2058130.jpeg'
         ]
     },
     'Fumigation Services': {
@@ -176,10 +176,10 @@ const JOB_TEMPLATES = {
         contract: '24 Months',
         companies: ['Rentokil Global', 'Orkin Specialized', 'Global Pest Ops', 'Sentinel Fumigation'],
         images: [
-            'https://images.pexels.com/photos/3927018/pexels-photo-3927018.jpeg',
-            'https://images.pexels.com/photos/8472394/pexels-photo-8472394.jpeg',
-            'https://images.pexels.com/photos/8472391/pexels-photo-8472391.jpeg',
-            'https://images.pexels.com/photos/338504/pexels-photo-338504.jpeg'
+            '/assets/images/pexels-photo-3927018.jpeg',
+            '/assets/images/pexels-photo-8472394.jpeg',
+            '/assets/images/pexels-photo-8472391.jpeg',
+            '/assets/images/pexels-photo-338504.jpeg'
         ]
     },
     'Sewer Maintenance': {
@@ -189,10 +189,10 @@ const JOB_TEMPLATES = {
         contract: '24 Months',
         companies: ['Urban Utility Ops', 'Civic Flow Partners', 'Global Water Maintenance', 'Metro Sanitation'],
         images: [
-            'https://images.pexels.com/photos/2311022/pexels-photo-2311022.jpeg',
-            'https://images.pexels.com/photos/1454806/pexels-photo-1454806.jpeg',
-            'https://images.pexels.com/photos/544966/pexels-photo-544966.jpeg',
-            'https://images.pexels.com/photos/1115804/pexels-photo-1115804.jpeg'
+            '/assets/images/pexels-photo-2311022.jpeg',
+            '/assets/images/pexels-photo-1454806.jpeg',
+            '/assets/images/pexels-photo-544966.jpeg',
+            '/assets/images/pexels-photo-1115804.jpeg'
         ]
     },
     'Waste Management': {
@@ -202,10 +202,10 @@ const JOB_TEMPLATES = {
         contract: '24 Months',
         companies: ['Waste Management Int', 'Veolia Environmental', 'Biffa Operations', 'CleanCity Global'],
         images: [
-            'https://images.pexels.com/photos/1556704/pexels-photo-1556704.jpeg',
-            'https://images.pexels.com/photos/2199293/pexels-photo-2199293.jpeg',
-            'https://images.pexels.com/photos/159358/pexels-photo-159358.jpeg',
-            'https://images.pexels.com/photos/1101121/pexels-photo-1101121.jpeg'
+            '/assets/images/pexels-photo-1556704.jpeg',
+            '/assets/images/pexels-photo-2199293.jpeg',
+            '/assets/images/pexels-photo-159358.jpeg',
+            '/assets/images/pexels-photo-1101121.jpeg'
         ]
     },
     'Janitorial Services': {
@@ -215,10 +215,10 @@ const JOB_TEMPLATES = {
         contract: '12-24 Months',
         companies: ['ISS World Support', 'Compass Group Janitorial', 'Sodexo Logistics', 'ABM Industries'],
         images: [
-            'https://images.pexels.com/photos/443383/pexels-photo-443383.jpeg',
-            'https://images.pexels.com/photos/209251/pexels-photo-209251.jpeg',
-            'https://images.pexels.com/photos/338504/pexels-photo-338504.jpeg',
-            'https://images.pexels.com/photos/4031013/pexels-photo-4031013.jpeg'
+            '/assets/images/pexels-photo-443383.jpeg',
+            '/assets/images/pexels-photo-209251.jpeg',
+            '/assets/images/pexels-photo-338504.jpeg',
+            '/assets/images/pexels-photo-4031013.jpeg'
         ]
     },
     'Information Technology': {
@@ -228,10 +228,10 @@ const JOB_TEMPLATES = {
         contract: 'Permanent',
         companies: ['TechWave Global', 'InnovaSystems EU', 'DataFlow Partners', 'CloudNet Solutions'],
         images: [
-            'https://images.unsplash.com/photo-1573164713988-8665fc963095?auto=format&fit=crop&q=80&w=800',
-            'https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=800',
-            'https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&q=80&w=800',
-            'https://images.unsplash.com/photo-1531496730074-83b638c0a7ac?auto=format&fit=crop&q=80&w=800'
+            '/assets/images/photo-1573164713988-8665fc963095.jpeg',
+            '/assets/images/photo-1522071820081-009f0129c71c.jpeg',
+            '/assets/images/photo-1542744173-8e7e53415bb0.jpeg',
+            '/assets/images/photo-1531496730074-83b638c0a7ac.jpeg'
         ]
     },
     'Financial Services': {
@@ -241,10 +241,10 @@ const JOB_TEMPLATES = {
         contract: '24 Months',
         companies: ['Global Finance Group', 'PWC Alliance', 'Capital Assurance', 'Audit Partners Int.'],
         images: [
-            'https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&q=80&w=800',
-            'https://images.unsplash.com/photo-1573164574572-cb89e39749b4?auto=format&fit=crop&q=80&w=800',
-            'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=800',
-            'https://images.unsplash.com/photo-1563986768494-4dee2763ff0f?auto=format&fit=crop&q=80&w=800'
+            '/assets/images/photo-1554224155-8d04cb21cd6c.jpeg',
+            '/assets/images/photo-1573164574572-cb89e39749b4.jpeg',
+            '/assets/images/photo-1454165804606-c3d57bc86b40.jpeg',
+            '/assets/images/photo-1563986768494-4dee2763ff0f.jpeg'
         ]
     },
     'Engineering & Technical': {
@@ -254,10 +254,10 @@ const JOB_TEMPLATES = {
         contract: 'Permanent',
         companies: ['Siemens Operations', 'Global Build Corp', 'InfraTech Engineering', 'EuroMech Systems'],
         images: [
-            'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=800',
-            'https://images.unsplash.com/photo-1531497865144-0464ef8fb9a9?auto=format&fit=crop&q=80&w=800',
-            'https://images.unsplash.com/photo-1581092795360-fd1ca04f0952?auto=format&fit=crop&q=80&w=800',
-            'https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&q=80&w=800'
+            '/assets/images/photo-1581091226825-a6a2a5aee158.jpeg',
+            '/assets/images/photo-1531497865144-0464ef8fb9a9.jpeg',
+            '/assets/images/photo-1581092795360-fd1ca04f0952.jpeg',
+            '/assets/images/photo-1504917595217-d4dc5ebe6122.jpeg'
         ]
     }
 };
@@ -274,7 +274,7 @@ export const generateJobs = () => {
             const salaryBoost = Math.floor(Math.random() * 300);
             const companyIndex = i % template.companies.length;
             const companyName = template.companies[companyIndex];
-            const companyImage = template.images ? template.images[companyIndex] : 'https://images.pexels.com/photos/6612281/pexels-photo-6612281.jpeg';
+            const companyImage = template.images ? template.images[companyIndex] : '/assets/images/pexels-photo-6612281.jpeg';
             
             allJobs.push({
                 id: `${country.code}-${i}`,

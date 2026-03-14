@@ -6,63 +6,63 @@ const GLOBAL_DESTINATIONS = [
         name: "USA",
         role: "Agriculture & Truck Driving",
         count: "150+ Openings",
-        img: "https://images.unsplash.com/photo-1595066113158-96359f13735e?w=800&h=1000&fit=crop",
+        img: "/assets/images/photo-1595066113158-96359f13735e.jpeg",
         flag: "us"
     },
     {
         name: "Australia",
         role: "Construction & Plumbing",
         count: "85+ Openings",
-        img: "https://images.unsplash.com/photo-1563453392212-326f5e854473?w=800&h=1000&fit=crop",
+        img: "/assets/images/photo-1563453392212-326f5e854473.jpeg",
         flag: "au"
     },
     {
         name: "Qatar",
         role: "Janitorial & Security",
         count: "300+ Openings",
-        img: "https://images.unsplash.com/photo-1541888946425-d81bb19480c5?w=800&h=1000&fit=crop",
+        img: "/assets/images/photo-1541888946425-d81bb19480c5.jpeg",
         flag: "qa"
     },
     {
         name: "Saudi Arabia",
         role: "Janitorial & Watchmen",
         count: "200+ Openings",
-        img: "https://images.unsplash.com/photo-1581578731522-745d0514227e?w=800&h=1000&fit=crop",
+        img: "/assets/images/photo-1581578731522-745d0514227e.jpeg",
         flag: "sa"
     },
     {
         name: "Germany",
         role: "Janitorial & Logistics",
         count: "120+ Openings",
-        img: "https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=800",
+        img: "/assets/images/pexels-photo-3184418.jpeg",
         flag: "de"
     },
     {
         name: "Canada",
         role: "Agriculture & Sewer Ops",
         count: "110+ Openings",
-        img: "https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=800&h=1000&fit=crop",
+        img: "/assets/images/photo-1517048676732-d65bc937f952.jpeg",
         flag: "ca"
     },
     {
         name: "UAE (Dubai)",
         role: "Fumigation & Waste Mgmt",
         count: "250+ Openings",
-        img: "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=800&h=1000&fit=crop",
+        img: "/assets/images/photo-1512453979798-5ea266f8880c.jpeg",
         flag: "ae"
     },
     {
         name: "UK",
         role: "Elderly Care & Housekeeping",
         count: "95+ Openings",
-        img: "https://images.unsplash.com/photo-1581578731522-745d0514227e?w=800&h=1000&fit=crop",
+        img: "/assets/images/photo-1581578731522-745d0514227e.jpeg",
         flag: "gb"
     },
     {
         name: "Poland",
         role: "Waste Mgmt & Housekeeping",
         count: "140+ Openings",
-        img: "https://images.unsplash.com/photo-1541888946425-d81bb19480c5?w=800&h=1000&fit=crop",
+        img: "/assets/images/photo-1541888946425-d81bb19480c5.jpeg",
         flag: "pl"
     }
 ];
@@ -87,7 +87,7 @@ export default function Home() {
                     </div>
                 </div>
                 <div className="hero-background">
-                    <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&q=80&w=2000" alt="Happy People Working Abroad" />
+                    <img src="/assets/images/photo-1521737604893-d14cc237f11d.jpeg" alt="Happy People Working Abroad" />
                     <div className="hero-gradient"></div>
                 </div>
             </header>
