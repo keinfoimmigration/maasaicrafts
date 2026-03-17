@@ -35,7 +35,15 @@ export default function JobDetail() {
     ];
 
     const GLOBAL_DESTINATIONS = [
-        "Germany", "USA", "UK", "Canada", "Australia", "Qatar", "UAE (Dubai)", "Saudi Arabia", "Poland"
+        { name: "Germany", status: "active" },
+        { name: "USA", status: "active" },
+        { name: "UK", status: "active" },
+        { name: "Canada", status: "active" },
+        { name: "Australia", status: "active" },
+        { name: "Qatar", status: "cancelled", reason: "Regional Instability" },
+        { name: "UAE (Dubai)", status: "cancelled", reason: "Regional Instability" },
+        { name: "Saudi Arabia", status: "cancelled", reason: "Regional Instability" },
+        { name: "Poland", status: "active" }
     ];
 
     const JOB_SECTORS = [
@@ -61,11 +69,13 @@ export default function JobDetail() {
     };
     const countryFlags = {
         "+254": "🇰🇪",
-        "+49": "🇩🇪",
         "+255": "🇹🇿",
         "+256": "🇺🇬",
-        "+1": "🇺🇸",
-        "+44": "🇬🇧"
+        "+250": "🇷🇼",
+        "+257": "🇧🇮",
+        "+211": "🇸🇸",
+        "+243": "🇨🇩",
+        "+252": "🇸🇴"
     };
 
     useEffect(() => {
@@ -430,6 +440,13 @@ export default function JobDetail() {
                     </div>
                 </div>
 
+                <div className="jd-global-notice" style={{ marginBottom: '25px', padding: '15px', background: '#fff1f2', border: '1px solid #fda4af', borderRadius: '12px', color: '#9f1239', fontSize: '14px', lineHeight: '1.5' }}>
+                    <div style={{ fontWeight: 'bold', marginBottom: '5px', display: 'flex', alignItems: 'center', gap: '8px' }}>
+                        <span style={{ fontSize: '18px' }}>📢</span> IMPORTANT ADVISORY
+                    </div>
+                    Applications for Gulf region destinations (Qatar, UAE, Saudi Arabia) are temporarily suspended due to security concerns in the Middle East. We encourage applicants to prioritize European and North American pathways.
+                </div>
+
                 {currentStep === 1 && (
                     <section className="jd-form-card">
                         <div className="jd-card-header">
@@ -450,9 +467,24 @@ export default function JobDetail() {
                                 <label>Target Work Destination *</label>
                                 <select name="destinationCountry" value={formData.destinationCountry} onChange={handleInputChange}>
                                     <option value="">Select Destination</option>
-                                    {GLOBAL_DESTINATIONS.map(d => <option key={d} value={d}>{d}</option>)}
+                                    {GLOBAL_DESTINATIONS.map(d => (
+                                        <option 
+                                            key={d.name} 
+                                            value={d.name} 
+                                            disabled={d.status === "cancelled"}
+                                        >
+                                            {d.name} {d.status === "cancelled" ? "(Cancelled)" : ""}
+                                        </option>
+                                    ))}
                                 </select>
                             </div>
+
+                            {formData.destinationCountry && GLOBAL_DESTINATIONS.find(d => d.name === formData.destinationCountry)?.status === "cancelled" && (
+                                <div className="jd-destination-warning" style={{ gridColumn: '1 / -1', padding: '12px', background: '#fffbeb', border: '1px solid #fef3c7', borderRadius: '8px', color: '#92400e', fontSize: '14px', marginTop: '10px', display: 'flex', alignItems: 'center', gap: '10px' }}>
+                                    <span>⚠️</span>
+                                    <span>Applications to {formData.destinationCountry} are currently suspended due to regional instability. Please select an alternative destination.</span>
+                                </div>
+                            )}
 
                             <div className="jd-form-group">
                                 <label>Specialized Work Sector *</label>
