@@ -6,34 +6,39 @@
     z-index: 1000;
     background: transparent;
     transition: var(--transition);
+    transform: translateY(0);
 }
 
 .is-scrolled {
-    background: var(--maasai-white);
-    box-shadow: var(--shadow-premium);
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+    padding: 10px 0;
 }
 
 .nav-container {
     max-width: 1400px;
     margin: 0 auto;
-    padding: 20px 40px;
+    padding: 15px 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    transition: var(--transition);
 }
 
 .nav-logo {
     display: flex;
     flex-direction: column;
     text-decoration: none;
+    z-index: 1001;
 }
 
 .logo-main {
     font-family: var(--font-display);
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     font-weight: 800;
     color: var(--maasai-ebony);
-    letter-spacing: 2px;
+    letter-spacing: 1px;
 }
 
 .logo-accent {
@@ -41,9 +46,9 @@
 }
 
 .logo-tag {
-    font-size: 0.65rem;
+    font-size: 0.6rem;
     text-transform: uppercase;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
     color: var(--maasai-ochre);
     font-weight: 600;
 }
@@ -61,66 +66,17 @@
     letter-spacing: 2px;
     color: var(--maasai-ebony);
     transition: var(--transition);
+    position: relative;
 }
 
 .nav-link:hover, .nav-link.active {
     color: var(--maasai-gold);
 }
 
-.nav-cart-desktop {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    padding: 8px 16px;
-    background: var(--maasai-ebony);
-    color: white;
-    border-radius: var(--radius-sm);
-    text-decoration: none;
-    transition: var(--transition);
-    position: relative;
-}
-
-.nav-cart-desktop:hover {
-    background: var(--maasai-gold);
-    color: var(--maasai-ebony);
-}
-
-.cart-icon {
-    font-size: 1.2rem;
-}
-
-.cart-text {
-    font-size: 0.8rem;
-    font-weight: 700;
-    text-transform: uppercase;
-}
-
-.cart-badge {
-    position: absolute;
-    top: -8px;
-    right: -8px;
-    background: var(--maasai-red);
-    color: white;
-    font-size: 0.7rem;
-    font-weight: 800;
-    min-width: 18px;
-    height: 18px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    border: 2px solid white;
-}
-
 .nav-actions-mobile {
     display: none;
     align-items: center;
     gap: 20px;
-}
-
-.cart-link {
-    position: relative;
-    text-decoration: none;
 }
 
 .nav-toggle {
@@ -130,47 +86,55 @@
     background: none;
     border: none;
     cursor: pointer;
-    padding: 5px;
+    padding: 10px;
+    z-index: 1001;
 }
 
 .nav-toggle span {
-    width: 24px;
+    width: 28px;
     height: 2px;
     background: var(--maasai-ebony);
     transition: var(--transition);
+    transform-origin: center;
 }
+
+.nav-toggle.open span:nth-child(1) { transform: translateY(8px) rotate(45deg); }
+.nav-toggle.open span:nth-child(2) { opacity: 0; }
+.nav-toggle.open span:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
 
 @media (max-width: 1024px) {
     .nav-container {
-        padding: 15px 25px;
+        padding: 10px 20px;
     }
 
     .nav-menu {
         position: fixed;
         top: 0;
         right: -100%;
-        width: 80%;
+        width: 100%;
         height: 100vh;
-        background: var(--maasai-white);
+        background: rgba(255, 255, 255, 0.98);
+        backdrop-filter: blur(15px);
         flex-direction: column;
         justify-content: center;
-        transition: var(--transition);
+        transition: 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+        gap: 30px;
     }
 
     .nav-menu.active {
         right: 0;
-        box-shadow: -10px 0 30px rgba(0,0,0,0.1);
+    }
+
+    .nav-link {
+        font-size: 1.5rem;
     }
 
     .nav-actions-mobile {
         display: flex;
     }
-
-    .nav-cart-desktop {
-        display: none;
-    }
 }
 
-@media (max-width: 380px) {
-    .logo-text { display: none; } /* On very small phones, only show logo icon to save space */
+@media (max-width: 480px) {
+    .logo-main { font-size: 1.2rem; }
+    .logo-tag { font-size: 0.5rem; letter-spacing: 1px; }
 }

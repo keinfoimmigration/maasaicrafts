@@ -131,3 +131,27 @@
   background: #cccccc;
   cursor: not-allowed;
 }
+@media (max-width: 768px) {
+  .product-info {
+    padding: 12px;
+  }
+
+  .product-name {
+    font-size: 1rem;
+    margin-bottom: 4px;
+  }
+
+  .product-price {
+    font-size: 1rem;
+    margin-bottom: 8px;
+  }
+
+  .product-description, .cultural-snippet, .stock-status {
+    display: none; /* Hide secondary info on mobile grid to save space */
+  }
+
+  .add-to-cart-btn {
+    padding: 10px;
+    font-size: 0.75rem;
+  }
+}
