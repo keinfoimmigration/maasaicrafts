@@ -1,44 +1,33 @@
 :root {
-  /* --- EAC Vibrant Institutional Palette --- */
-  --eac-blue: #0088CC;
-  --eac-green: #1EB53A;
-  --eac-yellow: #FFD700;
-  --eac-navy: #0F172A;
-  --eac-white: #FFFFFF;
-  --eac-bg: #F8FAFC;
-
-  /* --- Accessible Design System --- */
-  --glass-bg: rgba(255, 255, 255, 0.75);
-  --glass-border: rgba(255, 255, 255, 0.5);
-  --glass-blur: blur(16px);
-  --glass-shadow: 0 8px 32px 0 rgba(0, 86, 130, 0.1);
+  /* --- Maasaiweb Luxury Palette --- */
+  --maasai-red: #8b0000;      /* Deep Earthy Red */
+  --maasai-ochre: #d2691e;    /* Rich Earth Tone */
+  --maasai-gold: #c5a059;     /* Premium Gold */
+  --maasai-ebony: #1a1a1a;    /* Matte Black */
+  --maasai-cream: #fdf5e6;    /* Soft Background */
+  --maasai-white: #ffffff;
   
   /* --- Semantic Tokens --- */
-  --primary: var(--eac-blue);
-  --primary-gradient: linear-gradient(135deg, var(--eac-blue) 0%, #003855 100%);
-  --highlight: var(--eac-yellow);
-  --success: var(--eac-green);
-  --danger: #ef4444;
+  --primary: var(--maasai-ebony);
+  --accent: var(--maasai-gold);
+  --bg: var(--maasai-cream);
+  --surface: var(--maasai-white);
+  --text: var(--maasai-ebony);
+  --text-muted: #666666;
   
-  /* --- Typography Scale (Official & Accessible) --- */
-  --font-main: 'Inter', -apple-system, sans-serif;
-  --font-title: 'Outfit', sans-serif;
+  /* --- Typography --- */
+  --font-display: 'Playfair Display', serif;
+  --font-main: 'Montserrat', sans-serif;
   
-  /* --- Neutral Palette --- */
-  --text-main: var(--eac-navy);
-  --text-muted: #475569;
-  --border-strong: #E2E8F0;
-  --border-light: #F1F5F9;
-  
-  /* --- Surface Standard --- */
+  /* --- Elevation & Surfaces --- */
+  --shadow-premium: 0 10px 30px rgba(0, 0, 0, 0.05);
+  --shadow-hover: 0 20px 40px rgba(0, 0, 0, 0.1);
+  --radius-sm: 4px;
   --radius-md: 12px;
   --radius-lg: 20px;
-  --radius-full: 9999px;
   
-  /* --- Elevation --- */
-  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  /* --- Smooth Transitions --- */
+  --transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
 * {
